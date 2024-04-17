@@ -1,20 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Lauren Missy Bridgwater">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Missy Bridgwater Personal Website</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Lauren Missy Bridgwater">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missy Bridgwater's Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">  <!-- !!!WHY DOESN'T THIS WORK?? -->
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+    <!-- <link rel="icon" type="image/png" href="headshot.png"> // this works -->
+  </head>
 
-    <body>
-        <header>
-            <div>
-                <!-- ADD IN REST-->
-            </div>
-        </header>
-    </body>
+  <body>
+    <header>
+      <div>
+        <img id="icon-image" src="waving-hand.png" alt="Waving hand emoji" height="20" width="20">
+        <h1>Hello, I am Lauren "Missy" Bridgwater</h1>
+        <div class="flex-header">
+          <p class="subtext"> I am a third year computer science student at UCLA. I currently 
+            do research at UCLA's Medical Imaging and Informatics lab and am the 
+            project manager of UCLA's Engineers Without Borders Nepal Project.
+          </p>
+          <img id="header-image" src="headshot.png" alt="Missy's Headshot" height="200" width="174">
+        </div>
+      </div>
+    </header>
+    <div>
+      <h2>Work and Experience</h2>
+      <p>Put following in flex box:</p>
+      <ul>
+        <li>Medical Imagining and Informatics</li>
+        <li>Volunteering</li>
+        <ul>
+          <li>
+            <table>
+              <tr>
+                <td>Organization</td> <!-- if want empty cell, add &nbsp;-->
+                <td>Role</td>
+                <td>Impact Made</td>
+                <td>Funds Raised</td>
+                <td>Timeline</td>
+                <td>Other</td>
+              </tr>
+              <tr>
+                <td>Engineers Without Borders Nepal Project</td>
+                <td>Co-project Manager</td>
+                <td>Leading a team of 25 undergrads to build a chicken farm in Nepal, with the goal of feeding impoverished students in the area and funding the school they attend</td>
+                <td>$5000 (and growing!)</td>
+                <td>Fall 2023-present</td>
+                <td>Recently began in September 2023</td>
+              </tr>
+              <tr>
+                <td>Engineers Without Borders Nicaragua Project</td>
+                <td>Fundraising Director</td>
+                <td>Wrote grants, organized crowdfunding, and led a team to fundraise to build a school house in Nicaragua</td>
+                <td>$15,000</td>
+                <td>2022-2023</td>
+                <td>Also served as Travel Director and went to Nicaragua in Spring 2023 to work on construction of school house</td>
+              </tr>
+              <tr>
+                <td>Our Future of Change</td>
+                <td>Co-founder and Executive Director</td>
+                <td>Generated awareness about the prevalence of human trafficking and gave youth resources to get involved in the fight against it while also uplifting youth voices and encouraging female-empowerment.
+                  Recruited over 300 ambassadors within 32 countries and 24 US states to spread awareness about human trafficking.
+                  Directed “Coding for Change” (July 2021), teaching youth participants how to use JavaScript to code a web page containing anti-trafficking statistics.
+                  Led interviews with Stanford professors on how programming can dismantle human trafficking rings.
+                </td>
+                <td>$10,000</td>
+                <td>May 2020-2023</td>
+                <td>Currently serving as their strategic advisor</td>
+              </tr>
+              <tr>
+                <td>STEAM:CODERS</td>
+                <td>Teaching Volunteer</td>
+                <td>(Currently) teaching elementary students basic concepts of coding and math</td>
+                <td>NA</td>
+                <td>Spring 2024-present</td>
+                <td>About to begin this work</td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+        <li>Instameet</li>
+        <li>Memory Allocator</li>
+      </ul>
+      <p>Medical Imaging and Informatics</p>
+      <ul>
+        <li>Presenting to primary care physicians (PCPs) about the utility of simulation modeling to direct and inform chronic kidney disease (CKD) care</li>
+        <li>Educating on how to reduce health disparities in CKD care and diagnosis through the use of machine learning</li>
+        <li>Osteoporosis</li>
+        <ol>
+          <li>Utilize data from the largest longitudinal study of over 200,000 subjects and more than 40 years of data to analyze current models predicting low bone density, including OST, SCORE, FRAX, and more, and rate their effectiveness</li>
+          <li>Languages: python</li>
+          <li>Tools: pandas, ADD MORE/REST</li>
+        </ol>
+      </ul>
+    </div>
+    <div>
+      <h2>About</h2>
+      <p>Dedicated towards using software engineering and technical skills 
+        towards helping others, whether that is through working with nonprofit 
+        organizations or crafting a software product to improve someone's day.</p>
+    </div>
+    <div>
+        <h2>Miscellaneous</h2>
+    </div>
+    <footer>
+      <div class="contact">
+        <h2>Contact Information</h2>
+        <ul>
+          <li>  <!-- fix formatiing here, there is a weird space after this list item-->
+            <p>Email: missy.bridgwater@ucla.edu</p>
+          </li>
+          <li>
+            <a href="https://github.com/mbridgwater">Github</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/missybridgwater/">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 
 
 </html>
