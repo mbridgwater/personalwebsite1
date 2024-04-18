@@ -1,0 +1,218 @@
+@property --secondary-color {   /* ??? can i do this?*/
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #666667;   /*??? why is this red?*/
+}
+
+body {  /* ??? is this bad form at all to just make a body?? */
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px; /* to make sure there is no empty space on left */
+  margin-right: 0px; /* to make sure there is no empty space on right */
+  margin-top: 0px; /* to make sure there is no empty space on top */
+  margin-bottom: 0px; /* to make sure there is no empty space on bottom */
+}
+
+img { /* ??? is this bad form at all to just make img?? Should I do an ID here instead? */
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#header-image {
+  border-radius: 30px;
+}
+
+#flex-box-image {
+  margin: 20px auto 0px auto;
+  display: block;
+  width: 302px;
+  height: auto;
+}
+
+#icon-image {
+  margin: auto;
+  display: inline-block;
+  padding-top: 0px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Nunito";
+}
+
+.header-text {
+  font-variant: small-caps;
+  font-weight: bold;
+  color: #000;
+  font-family: "Nunito";
+  font-size: 25px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* display: inline-block; */
+}
+
+.subheader {
+  /* color: var(--secondary-color); */
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Nunito";
+  margin: 10px 0px 10px 0px;
+  /* font-variant: small-caps; */
+}
+
+.subtext {
+  color: var(--secondary-color);
+  font-size: larger;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  margin-bottom: 0px;
+  font-weight: 100;
+}
+
+.flex-main-text {
+  color: #4c4e4e;
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+
+.header-flex-container {
+  display: flex;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.intro-flex-div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.image-flex-div {
+  margin-left: auto; /* center image */
+  margin-right: auto; /* center image */
+  margin-top: auto; /* center image */
+  margin-bottom: auto; /* center image */
+}
+
+.middle-section {
+  background-color: var(--secondary-color);
+  /* background-color: black; */
+  width: 100%;    /* ??? Q: HOW GET RID OF LIL SPACE ON LEFT??*/
+  color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* margin-top: 20px;
+  margin-bottom: 0px; */
+}
+
+.mid-section-txt {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.middle-flex-container {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.work-flex-div {
+  width: 50%;
+  margin: auto 5px auto 5px; /* margin: top right bottom left; */
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  padding: 20px 30px 20px 30px; /* padding: top right bottom left; */
+  /* height: 400px; */
+}
+
+.other-sections {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.contact {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 75%;
+}
+
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.blue-background-color {
+  background-color: #f2f6ff;
+}
+
+.green-background-color {
+  background-color: #f4f9f4;
+}
+
+.yellow-background-color {
+  background-color: #fffbeb;
+}
+
+.light-text-color {
+  color: #fff;
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.rounded-div {
+  margin: auto 5px auto 5px; /* margin: top right bottom left; */
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  padding: 20px 30px 20px 30px; /* padding: top right bottom left; */
+/* height: 400px; */
+}
+  
+
+/* !!!QUESTIONS
+- when do we use IDs vs. classes? 
+*/
