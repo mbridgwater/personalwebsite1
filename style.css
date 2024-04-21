@@ -11,10 +11,7 @@ body {  /* ??? is this bad form at all to just make a body?? */
   width: 100%;
   padding-left: 0px;
   padding-right: 0px;
-  margin-left: 0px; /* to make sure there is no empty space on left */
-  margin-right: 0px; /* to make sure there is no empty space on right */
-  margin-top: 0px; /* to make sure there is no empty space on top */
-  margin-bottom: 0px; /* to make sure there is no empty space on bottom */
+  margin: 0px 0px 0px 0px;
 }
 
 img { /* ??? is this bad form at all to just make img?? Should I do an ID here instead? */
@@ -22,18 +19,52 @@ img { /* ??? is this bad form at all to just make img?? Should I do an ID here i
   margin-bottom: auto;
 }
 
+strong {
+  font-weight: 700;
+  color: #2d68c4;
+  /* background-color: rgb(242, 169, 0, 0.3); */
+}
+
+p {
+  margin: 5px 0px 5px 0px;
+}
+
+/* li {
+  padding: 5px 0px 5px 0px;
+} */
+
+ul {
+  margin: 15px 0px 10px 0px;
+}
+
+.funds-raised {
+  color: red;
+  font-weight: 400;
+  background-color: #fff;
+  border: 1px solid var(--secondary-color);
+  padding: 0px 2px 0px 2px;
+  border-radius: 3px;
+}
+
 #header-image {
   border-radius: 30px;
 }
 
 #flex-box-image {
+  margin: 20px auto 20px auto;
+  display: block;
+  width: 250px;
+  height: auto;
+}
+
+/* #flex-box-takeda-image {
   margin: 20px auto 0px auto;
   display: block;
   width: 302px;
   height: auto;
-}
+} */
 
-#icon-image {
+.icon-image {
   margin: auto;
   display: inline-block;
   padding-top: 0px;
@@ -53,7 +84,7 @@ img { /* ??? is this bad form at all to just make img?? Should I do an ID here i
   color: #000;
   font-family: "Nunito";
   font-size: 25px; 
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 0px;
   /* display: inline-block; */
 }
@@ -63,7 +94,7 @@ img { /* ??? is this bad form at all to just make img?? Should I do an ID here i
   font-style: normal;
   font-weight: 700;
   font-family: "Nunito";
-  margin: 10px 0px 10px 0px;
+  margin: 20px 0px 5px 0px;
   /* font-variant: small-caps; */
 }
 
@@ -85,7 +116,7 @@ img { /* ??? is this bad form at all to just make img?? Should I do an ID here i
   font-weight: 400;
 }
 
-.header-flex-container {
+#header-flex-container {
   display: flex;
   width: 75%;
   margin-left: auto;
@@ -110,7 +141,8 @@ img { /* ??? is this bad form at all to just make img?? Should I do an ID here i
 }
 
 .middle-section {
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
+  background-color: lightgray;
   /* background-color: black; */
   width: 100%;    /* ??? Q: HOW GET RID OF LIL SPACE ON LEFT??*/
   color: #000;
@@ -128,13 +160,50 @@ img { /* ??? is this bad form at all to just make img?? Should I do an ID here i
   width: 75%;
 }
 
-.middle-flex-container {
-    display: flex;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
+#middle-flex-container {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#about-flex-container {
+  display: flex;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  padding: 0px 0px 0px 0px;
+}
+
+.about-flex-div {
+  margin: 0px 0px 0px 5px; /* margin: top right bottom left; */
+  /* border: 1px solid lightgray;
+  border-radius: 30px; */
+  padding: 0px 50px 0px 0px; /* padding: top right bottom left; */
+  min-height: 370px;
+}
+
+#about-flex-div-left {
+  width: 50%;
+}
+
+#about-flex-div-right {
+  width: 50%;
+}
+
+.volunteering-img {
+  padding: 10px 2px 0px 2px; /* padding: top right bottom left; */
+  height: 230px;
+  width: auto;
+  /* border-radius: 3px; */
+}
+
+#volunteering-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .work-flex-div {
@@ -142,13 +211,13 @@ img { /* ??? is this bad form at all to just make img?? Should I do an ID here i
   margin: auto 5px auto 5px; /* margin: top right bottom left; */
   border: 1px solid lightgray;
   border-radius: 30px;
-  padding: 20px 30px 20px 30px; /* padding: top right bottom left; */
-  /* height: 400px; */
+  padding: 20px 30px 0px 30px; /* padding: top right bottom left; */
+  min-height: 370px;
 }
 
 .other-sections {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto 100px auto;
+  padding: 30px 0px 0px 0px;
   width: 75%;
 }
 
@@ -193,7 +262,8 @@ img { /* ??? is this bad form at all to just make img?? Should I do an ID here i
 }
 
 .yellow-background-color {
-  background-color: #fffbeb;
+  /* background-color: #fffbeb; */
+  background-color: rgba(255, 246, 226, 0.902);
 }
 
 .light-text-color {
@@ -211,7 +281,57 @@ img { /* ??? is this bad form at all to just make img?? Should I do an ID here i
   padding: 20px 30px 20px 30px; /* padding: top right bottom left; */
 /* height: 400px; */
 }
-  
+
+table {
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+th {
+  border: 1px solid;
+}
+
+td {
+  border: 1px solid;
+  padding: 5px 5px 5px 5px;
+  font-size: 13px;
+}
+
+.inner-list {
+  list-style-type: square;;
+}
+
+.ucla-blue-color {
+  color: #2d68c4;
+  /* -webkit-text-stroke: 0.5px #f2a900; */
+}
+
+.ucla-gold-color {
+  color: #f2a900;
+}
+
+.ucla-colors {
+  color: #2d68c4;
+  background-color: rgb(242, 169, 0, 0.3);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.top-padding {
+  padding: 15px 0px 0px 0px;
+}
+
+.small-light-font {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+/* .ucla-colors-swapped {
+  background-color: rgb(45, 104, 196, 0.6);
+  color: rgb(242, 169, 0);
+} */
 
 /* !!!QUESTIONS
 - when do we use IDs vs. classes? 
