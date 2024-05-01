@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@200..900&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon">  !!!WHY DOESN'T THIS WORK?? -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
     <!-- <link rel="icon" type="image/png" href="headshot.png"> -->
   </head>
@@ -21,8 +21,8 @@
       <div>
         <div id="header-flex-container">
           <div class="intro-flex-div">
-            <img class="icon-image" src="waving-hand-50by50.png" alt="Waving hand emoji" height="45" width="auto"> <!-- ??? do I need height="18" width="auto" here even if in CSS?-->
-            <h1 class="title">Hello, I am Lauren "Missy" Bridgwater</h1>
+            <img class="icon-image" src="waving-hand-50by50.png" alt="Waving hand emoji"> <!-- ??? do I need height="18" width=auto here even if in CSS?-->
+            <h1>Hello, I am Lauren "Missy" Bridgwater</h1>
             <p class="subtext"> I am a third year computer science student at 
               <span class="ucla-blue-color">UCLA</span>.
               From my research at UCLA's Medical Imaging and Informatics lab to my
@@ -32,7 +32,7 @@
             </p>
           </div>
           <div class="image-flex-div">
-            <img id="header-image" src="headshot.png" alt="Missy's Headshot" height="400" width="auto">
+            <img id="header-image" src="headshot.png" alt="Missy's Headshot">
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@
     <div class="middle-section">
       <div class="mid-section-txt">
         <h2 class="header-text"> <!--light-text-color-->
-          <img class="icon-image" src="writing-hand-50by50.png" alt="Writing hand emoji" height="30" width="auto"> <!-- ??? do I need height="18" width="auto" here even if in CSS? should i add that in CSS -->
+          <img class="icon-image" src="writing-hand-50by50.png" alt="Writing hand emoji"> <!-- ??? do I need height="18" width=auto here even if in CSS? should i add that in CSS -->
           Work and Experience<!-- ??? the icon has some padding below it for some reason, how get rid of this?-->
         </h2>
         <hr>  <!-- horizontal line -->
@@ -49,14 +49,15 @@
             <h3 class="subheader">Medical Imagining and Informatics</h3>
             <ul class="flex-main-text">
               <li>Presenting to primary care physicians about the utility of simulation modeling to direct and inform chronic kidney disease care</li>
-              <li>Osteoporosis</li>
-              <ul class="inner-list">
-                <li>Utilize data from a study of over 200,000 subjects and more than 40 years of data to analyze current models predicting low bone density (including OST, SCORE, FRAX, ORAI, and OSIRIS) and rate their effectiveness</li>   <!-- ??? should i also have <p> tags around these elements?-->
-                <li>Languages and Tools: Python, Pandas, ADD MORE/REST</li>
-              </ul>
+              <li>Osteoporosis
+                <ul class="inner-list">
+                  <li>Utilize data from a study of over 200,000 subjects and more than 40 years of data to analyze current models predicting low bone density (including OST, SCORE, FRAX, ORAI, and OSIRIS) and rate their effectiveness</li>
+                  <li>Languages and Tools: Python, Pandas</li>
+                </ul>
+              </li>
             </ul>
-            <img id="flex-box-image" src="ucla-mii-logo-500by133.png" alt="UCLA MII Logo"> <!-- ??? Do i need to specify height/width here even if i specified in CSS??-->
-          </div>
+            <img class="flex-box-image" src="ucla-mii-logo-300by80.png" alt="UCLA MII Logo"> <!-- ??? Do i need to specify height/width here even if i specified in CSS??-->
+          </div>          
           <div class="work-flex-div green-background-color">
             <h3 class="subheader">Takeda</h3>
             <ul class="flex-main-text">
@@ -64,15 +65,15 @@
               <li>Create a notifications and analytics web application using PowerBI, PowerAutomate, and PowerApps to assist in error-correcting and better understand why errors are occurring</li>
             </ul>
             <br>
-            <img id="flex-box-image" src="takeda-logo-400by137.png" alt="Takeda Logo"> <!-- ??? Do i need to specify height/width here even if i specified in CSS??-->
+            <img class="flex-box-image" src="takeda-logo-300by103.png" alt="Takeda Logo"> <!-- ??? Do i need to specify height/width here even if i specified in CSS??-->
           </div>
           <!-- <div class="work-flex-div blue-background-color">
             <h3 class="subheader">Instameet</h3>
-            <img id="flex-box-image" src="ucla-mii-logo-500by133.png" alt="UCLA MII Logo"> <!-- ??? Do i need to specify height/width here even if i specified in CSS??
+            <img class="flex-box-image" src="ucla-mii-logo-500by133.png" alt="UCLA MII Logo"> ??? Do i need to specify height/width here even if i specified in CSS??
           </div>
           <div class="work-flex-div green-background-color">
             <h3 class="subheader">Memory Allocator</h3>
-          </div> -->  <!-- ADD THIS IN AND FIX IT TO WRAP-->
+          </div> ADD THIS IN AND FIX IT TO WRAP-->
         </div>
         <div class="rounded-div blue-background-color">
           <h3 class="subheader">Volunteering</h3>
@@ -81,24 +82,28 @@
             Superheros and sidekicks
           </caption> -->
             <colgroup>
-              <col span="1"/>
-              <col span="1"/>
-              <col span="1"/>
-              <col span="1"/>
-              <col span="1"/>
-              <col span="1"/>
+              <col span="1">
+              <col span="1">
+              <col span="1">
+              <col span="1">
+              <col span="1">
+              <col span="1">
+              <col span="1">
             </colgroup>
             <thead>
               <tr>
-                <th scope="col">Organization</th>
+                <th scope="col" colspan="2">Organization</th>
                 <th scope="col">Role</th>
                 <th scope="col">Impact Made</th>
                 <th scope="col">Funds Raised</th>
                 <th scope="col">Timeline</th>
                 <th scope="col">Other</th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
-                <td><strong>Engineers Without Borders Nepal Project</strong></td>
+                <td rowspan="2"><strong>Engineers Without Borders</strong></td>
+                <td>Nepal Project</td>
                 <td>Project Manager</td>
                 <td>Leading a team of 25 undergrads to build a chicken farm in Nepal, with the goal of feeding impoverished students in the area and funding the school they attend</td>
                 <td><span class="funds-raised">$6000</span> (<a href="https://herfuturecoalition.networkforgood.com/projects/216196-ucla-nepal-farmhouse-project">and growing!</a>)</td>
@@ -106,7 +111,7 @@
                 <td>Recently began in September 2023</td>
               </tr>
               <tr>
-                <td><strong>Engineers Without Borders Nicaragua Project</strong></td>
+                <td>Nicaragua Project</td>
                 <td>Fundraising Director</td>
                 <td>Wrote grants, organized crowdfunding, and led a team to fundraise to build a school house in Nicaragua</td>
                 <td><span class="funds-raised">$15,000</span></td>
@@ -114,7 +119,7 @@
                 <td>Also served as Travel Director and went to Nicaragua in Spring 2023 to work on construction of school house</td>
               </tr>
               <tr>
-                <td><strong>Our Future of Change</strong></td>
+                <td colspan="2"><strong>Our Future of Change</strong></td>
                 <td>Founder and Executive Director</td>
                 <td>Generated awareness about the prevalence of human trafficking and gave youth resources to get involved in the fight against it.
                   Recruited over 300 ambassadors within 32 countries and 24 US states.
@@ -125,88 +130,96 @@
                 <td>Currently serving as their strategic advisor</td>
               </tr>
               <tr>
-                <td><strong>STEAM:CODERS</strong></td>
+                <td colspan="2"><strong>STEAM:CODERS</strong></td>
                 <td>Teaching Volunteer</td>
                 <td>(Currently) teaching elementary students basic concepts of coding and math</td>
                 <td>N/A</td>
                 <td>Spring 2024-present</td>
                 <td>About to begin this work</td>
               </tr>
-            </table>
-            <div id="volunteering-img-div">
-              <img class="volunteering-img" src="VolunteeringPhotos/65519052-AF0B-42B6-AD98-0634C75E5582.png" alt="Missy sawing a beam to build schoolhouse">
-              <img class="volunteering-img" src="VolunteeringPhotos/Missy_Teaching_Favcopy.jpg" alt="Missy teaching">
-              <img class="volunteering-img" src="VolunteeringPhotos/nicaragua-kidsandteam copy.JPG" alt="Photo of Missy, volunteers, and children from the community in Nicaragua"> <!-- height="232" width="auto"-->
-              <img class="volunteering-img" src="VolunteeringPhotos/schoolhouse_landscape_fav copy.jpg" alt="Picture of school in Nepal">
-            </div>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="4">Total Funds Raised</th>
+                <!-- <th scope="col"></th>
+                <th scope="col"></th> -->
+                <th scope="col">$31,000+</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </tfoot>
+          </table>
+          <div id="volunteering-img-div">
+            <img class="volunteering-img" src="missy-sawing.png" alt="Missy sawing a beam to build schoolhouse">
+            <img class="volunteering-img" src="missy-teaching.jpg" alt="Missy teaching">
+            <img class="volunteering-img" src="nicaragua-kids-team.jpg" alt="Photo of Missy, volunteers, and children from the community in Nicaragua"> <!-- height="232" width=auto-->
+            <img class="volunteering-img" src="nepal-school-landscape.jpg" alt="Picture of school in Nepal">
           </div>
         </div>
       </div>
-      <div class="other-sections">
-        <div>
-          <h2 class="header-text">
-            <img class="icon-image" src="woman-technologist-50by50.png" alt="Writing hand emoji" height="30" width="auto"> <!-- ??? do I need height="18" width="auto" here even if in CSS? should i add that in CSS -->
-            About
-          </h2>
-          <hr>  <!-- horizontal line -->
-          <div id="about-flex-container">
-            <div class="about-flex-div" id="about-flex-div-left">
-              <h3 class="subheader secondary-color">My Mission</h3>
-              <p class="top-padding">Dedicated towards using software engineering and technical skills 
-                towards helping others, whether that is through working with nonprofit 
-                organizations or crafting a software product to improve someone's day.</p>
-              <br>
-              <h3 class="subheader secondary-color">My Skillsets</h3>
-              <ul>
-                <li>Programming Languages: Python, C++, C, SQL, JavaScript, Java, Bash, Emacs Lisp</li>
-                <li>Technologies and Frameworks:  Git, HTML, React, Microsoft Office, Excel, Linux, PowerApps, Power BI</li>
-                <li>Languages: English (Native) and Spanish (Intermediate)</li>
-              </ul>
-              <br>
-              <h3 class="subheader secondary-color">Contact Information</h3>
-              <ul>
-                <li>  <!-- fix formatiing here, there is a weird space after this list item-->
-                  Email: missy.bridgwater@ucla.edu
-                </li>
-                <li>
-                  <a href="https://github.com/mbridgwater">Github</a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/missybridgwater/">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
-            <div class="about-flex-div" id="about-flex-div-right">
-              <h3 class="subheader secondary-color">Timeline</h3>
-              <p class="top-padding small-light-font">(Expected) June 2024 - (Expected) August 2024</p>
-              <p><span class="bold">Walmart Global Tech</span>, Engineering Intern</p>
-              <p class="top-padding small-light-font">June 2023 - August 2023</p>
-              <p><span class="bold">Takeda</span>, Information Technology Intern</p>
-              <p class="top-padding small-light-font">Mar 2023</p>
-              <p><span class="bold">UCLA’s Technical Management Program</span>, Instructor's Aide</p>
-              <p class="top-padding small-light-font">June 2022 - Present</p>
-              <p><span class="bold">UCLA Medical Imaging and Informatics Lab</span>, Research Assistant</p>
-              <p class="top-padding small-light-font">Jan 2022 - June 2022</p>
-              <p><span class="bold">BJ's Restaurants and Brewery</span>, Hostess</p>
-              <p class="top-padding small-light-font">Nov 2021 - Present</p>
-              <p><span class="bold">Engineers Without Borders</span>, Project Manager and Fundraising Director</p>
-              <p class="top-padding small-light-font">Oct 2021 - Jan 2022</p>
-              <p><span class="bold">Rocket Project</span>, Prometheus Team Member</p>
-              <p class="top-padding small-light-font">Sept 2021 - (Expected) June 2025</p>
-              <p><span class="bold">UCLA</span>, Computer Science Student</p>
-              <p class="top-padding small-light-font">May 2020 - June 2023</p>
-              <p><span class="bold">Our Future of Change</span>, Founder</p>
-            </div>
+    </div>
+    <div class="other-sections">
+      <div>
+        <h2 class="header-text">
+          <img class="icon-image" src="woman-technologist-50by50.png" alt="Writing hand emoji"> <!-- ??? do I need height="18" width=auto here even if in CSS? should i add that in CSS -->
+          About
+        </h2>
+        <hr>  <!-- horizontal line -->
+        <div id="about-flex-container">
+          <div class="about-flex-div" id="about-flex-div-left">
+            <h3 class="subheader secondary-color">My Mission</h3>
+            <p class="top-padding">Dedicated towards using software engineering and technical skills 
+              towards helping others, whether that is through working with nonprofit 
+              organizations or crafting a software product to improve someone's day.</p>
+            <br>
+            <h3 class="subheader secondary-color">My Skillsets</h3>
+            <ul>
+              <li>Programming Languages: Python, C++, C, SQL, JavaScript, Java, Bash, Emacs Lisp</li>
+              <li>Technologies and Frameworks:  Git, HTML, React, Microsoft Office, Excel, Linux, PowerApps, Power BI</li>
+              <li>Languages: English (Native) and Spanish (Intermediate)</li>
+            </ul>
+            <br>
+            <h3 class="subheader secondary-color">Contact Information</h3>
+            <ul>
+              <li>  <!-- fix formatiing here, there is a weird space after this list item-->
+                Email: missy.bridgwater@ucla.edu
+              </li>
+              <li>
+                <a href="https://github.com/mbridgwater">Github</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/missybridgwater/">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+          <div class="about-flex-div" id="about-flex-div-right">
+            <h3 class="subheader secondary-color">Timeline</h3>
+            <p class="top-padding small-light-font">(Expected) June 2024 - (Expected) August 2024</p>
+            <p><span class="bold">Walmart Global Tech</span>, Engineering Intern</p>
+            <p class="top-padding small-light-font">June 2023 - August 2023</p>
+            <p><span class="bold">Takeda</span>, Information Technology Intern</p>
+            <p class="top-padding small-light-font">Mar 2023</p>
+            <p><span class="bold">UCLA’s Technical Management Program</span>, Instructor's Aide</p>
+            <p class="top-padding small-light-font">June 2022 - Present</p>
+            <p><span class="bold">UCLA Medical Imaging and Informatics Lab</span>, Research Assistant</p>
+            <p class="top-padding small-light-font">Jan 2022 - June 2022</p>
+            <p><span class="bold">BJ's Restaurants and Brewery</span>, Hostess</p>
+            <p class="top-padding small-light-font">Nov 2021 - Present</p>
+            <p><span class="bold">Engineers Without Borders</span>, Project Manager and Fundraising Director</p>
+            <p class="top-padding small-light-font">Oct 2021 - Jan 2022</p>
+            <p><span class="bold">Rocket Project</span>, Prometheus Team Member</p>
+            <p class="top-padding small-light-font">Sept 2021 - (Expected) June 2025</p>
+            <p><span class="bold">UCLA</span>, Computer Science Student</p>
+            <p class="top-padding small-light-font">May 2020 - June 2023</p>
+            <p><span class="bold">Our Future of Change</span>, Founder</p>
           </div>
         </div>
       </div>
-      <!-- ??? Do I need to have a footer?-->
-      <!-- <footer>
-        <div class="contact">
-          
-        </div>
-      </footer> -->
-    </body>
+    </div>
+    <!-- ??? Do I need to have a footer?-->
+    <!-- <footer>
+    </footer> -->
+  </body>
 
 
 </html>
